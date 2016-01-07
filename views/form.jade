@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  form(method='post' action="/albums")
+    label(for='artist') Artist
+    input(id='artist', name='artist', type='text')
+    label(for='name') Song Name
+    input(id='name', name='name', type='text')
+    label(for='genre') Genre
+    input(id='genre', name='genre', type='text')
+    label(for='stars') Stars
+    input(id='stars', name='stars', type='number')
+    label(for='explicit') Explicit?
+    input(id='explicity', name='explicit', type='checkbox')
+    button(type='submit') Submit
